@@ -4,134 +4,65 @@
   height: 300px;
   border-radius: 0px;
 }
+
 .movie_p_c{
   display:inline-block;
   margin: 20px 30px 10px 42px;
   font-size: 18px;
   font-family: 'Lora', serif;
-  /* border-left: 3px solid rgb(9, 177, 233);
-  background-color: lightblue; */
-}
-.movie_grid{
-  display:flex;
-  flex-wrap: wrap;
 }
 
 .backgroundWall{
-  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  /* background-attachment: fixed; */
+  width: 100%;
+  height: 550px;
 }
-.slide > h4{
-  margin-right: 957px;
-  padding-left: 30px;
-  padding-right: 20px;
-  padding-top:10px;
-  padding-bottom:10px;
-  font-family: 'Lora', serif;
-  background-color:#1a1503;
-  display:inline-block;
-  color: #cccdb4;
-}
-.slide > h3{
-  margin-right: 100%;
-  margin-top: 50px;
-  padding-left: 30px;
-  padding-right: 20px;
-  padding-top:10px;
-  padding-bottom:10px;
-  font-family: 'Lora', serif;
-  background-color:#1a1503;
-  display:inline-block;
-  color: #cccdb4;
+.bottomCar{
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right; */
+  width: 100%;
+  height: 200px;
 }
 
-#HomeLog{
-
-
-  
-
-  background-color:#fefefe;
-}
-
-/* .PresentedBy1{
-  display: inline-block;
-  text-align: left;
-   margin:0px;
-  margin-left: 30px; 
-  margin-right: 100%; 
-} */
-
-/* .PresentedBy2{
-  display: inline-block;
-  margin: 0px;
-  
-  margin-left: 30px;
-  margin-right: 5%;
-  background-color: rgb(9, 177, 233);
-} */
 
 .movie_character{
   display:inline-block;
   width: 150px;
   height: 220px;
-  /* border-radius: 10px; */
+  transition: transform .4s;
+  border-radius: 10px;
   box-shadow: none;
   border: 3px solid #716944;
+  transition:  transform .2s;
 }
+
+
+
 .movie_character:hover{
+  box-shadow: 0 0 25px  #716944;
+  transform: scale(1.3);
+  border: 3px solid #1daeed;
+  transform: translate(0, -10px);
+}
+
+.card-img{
+  padding: 5px 5px 5px 10px;
+
+}
+.card-img:hover{
+  /* box-shadow: 4px 4px  #1daeed; */
+  box-shadow: 0 0 25px  #716944;
+  transform: scale(1.1);
   
-  box-shadow: 4px 4px  #716944;
-
-
+ 
 }
 
-#HomeImage1{
-  height: 80px;
-  width: 80px;
-  filter: sepia();
-}
 
-#HomeImage2{
-  height: 90px;
-  width: 180px;
-  /* filter:invert(); */
-  
-}
 
-h6{
-  margin-right: 800px;
-  margin-top: 38%;
-  display:inline-block;
-  font-family: 'Lora', serif;
-  background-color:#1a1503;
-  color: #cccdb4;
-}
-.HomeDescription{
-  font-family: 'Lora', serif;
-  background-color: #504721;
-  padding: 60px;
-  font-weight: 400;
-  color: #ede6cb;
-}
-.HomeDescription p {
-  font-size: 20px;
-}
 
-.HomeDescription h2 {
-  font-size: 30px;
-}
 
-#HomeLog p{
-  font-size: 9px;
-  color:#504721;
-  font-family: 'Lora', serif;
-}
 
-.CategoryHeading{
-  color:#504721;
-  font-size: 30px;
-  font-family: 'Lora', serif;
-}
+

@@ -14,11 +14,11 @@ const Header = () => {
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
 
-            <Link className="nav-link" id="home-link" to="/home">Home<span className="sr-only">(current)</span></Link>
+            <HashLink className="nav-link" id="home-link" to="/home#top">Home<span className="sr-only">(current)</span></HashLink>
           </li>
           <li className="nav-item nav-item active" >
             <HashLink className="nav-link" id="home-link" 
-              to="/home#movie_search"
+              to="/home#movie_first"
             //   activeClassName="selected"
             //   activeStyle={{ color: 'red' }}
             // // etc...
@@ -28,7 +28,7 @@ const Header = () => {
           </li>
           <li className="nav-item nav-item active" >
             <HashLink className="nav-link" id="home-link" 
-              to="/home#character_search"
+              to="/home#character_first"
             //   activeClassName="selected"
             //   activeStyle={{ color: 'red' }}
             // // etc...
@@ -38,11 +38,31 @@ const Header = () => {
           </li>
           <li className="nav-item nav-item active" >
             <HashLink className="nav-link" id="home-link" 
-              to="/home#location_search"
+              to="/home#location_first"
             //   activeClassName="selected"
             //   activeStyle={{ color: 'red' }}
             // // etc...
             >Locations
+            <span className="sr-only">(current)</span>
+            </HashLink>
+          </li>
+          <li className="nav-item nav-item active" >
+            <HashLink className="nav-link" id="home-link" 
+              to="/home#species_first"
+            //   activeClassName="selected"
+            //   activeStyle={{ color: 'red' }}
+            // // etc...
+            >Species
+            <span className="sr-only">(current)</span>
+            </HashLink>
+          </li>
+          <li className="nav-item nav-item active" >
+            <HashLink className="nav-link" id="home-link" 
+              to="/home#vehicles_first"
+            //   activeClassName="selected"
+            //   activeStyle={{ color: 'red' }}
+            // // etc...
+            >Vehicles
             <span className="sr-only">(current)</span>
             </HashLink>
           </li>

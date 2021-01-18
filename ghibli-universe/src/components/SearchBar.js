@@ -4,7 +4,7 @@ class SearchBar extends Component {//a class based component inspite of being a 
     constructor(props) {
         super(props);
         this.state = {
-            title: `Type and filter by ${this.props.category} name over here`,//Title of the page, could be even treated as a static data
+            title: `Type and filter by ${this.props.category} name over here:`,//Title of the page, could be even treated as a static data
 
         }
     }
@@ -15,18 +15,25 @@ class SearchBar extends Component {//a class based component inspite of being a 
         return (
             <React.Fragment>
                 <header id={`${this.props.category}_search`}>
-                    <div>{this.state.title}</div>
-                    {/* setting the title from the state */}
-                    <center>
+                    <div className='container'>
+                        <div>{this.state.title}</div>
+                        {/* setting the title from the state */}
+                   
                         <input onChange={this.inputHandler} style={{
                             fontSize: '20px',
                             fontFamily: 'Times New Roman', color: '#504721',
-                            border: '5px solid #504721',
+                            border: 'none',
+                            backgroundColor: '#ffe5b2',
                             borderRadius: '5px',
-                            outline: 'none'
+                            outline: 'none',
+                            padding: '5px',
+                            margin: '0px'
                         }} />
+                        <img alt='search' src="https://img.icons8.com/fluent/96/000000/search-bar.png"/>
                         {/* triggering inputHandler(event) onChange*/}
-                    </center>
+                   
+                    </div>
+                    
                 </header>
             </React.Fragment>
         )

@@ -4,7 +4,7 @@ import axios from 'axios';
 import Logout from './Logout';
 import MoviePage from '../components/MoviePage';
 import VideoComponent from '../components/VideoComponent'
-const filmsUrl = 'http://localhost:8900/films';
+const filmsUrl = 'https://studio-ghibli-universe-api.herokuapp.com/films';
 
 
 class Movie extends Component {
@@ -25,6 +25,7 @@ class Movie extends Component {
     return (
       <>
         <MoviePage moviedetails={this.state.movie} />
+        
   
         <Logout history={this.props.history} />
       </>
